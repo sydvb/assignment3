@@ -12,17 +12,40 @@
 
     <style>
       .container {
-        width: 1200px;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        justify-content: center;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
       }
 
-      .grid-item {
-        padding: 20px;
+      .widget {
+        display: flex;
+        max-width: 1200px;
+        padding: 50px 120px;
+        gap: 50px;
+        align-items: flex-start;
       }
 
-      #sitetitle {
+      .widget div {
+        margin: 0;
+      }
+
+      .flexbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .flexbox div {
+        background-color: #9EE1FF;
+        border-radius: 64px;
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+        padding: 7px 12px 10px 12px;
+        margin: 15px 0;
+      }
+
+      #site-title {
         font-family: "Figtree", sans-serif;
         font-size: 170px;
         letter-spacing: -3px;
@@ -33,24 +56,32 @@
 
       body {
         font-family: "Figtree", sans-serif;
+        max-width: 1440px;
+        margin: 0 auto;
       }
 
-      .uppertitle {
+      .upper-title {
         font-size: 64px;
         font-weight: 400;
         margin: 0px 120px 0px 120px;
         position: absolute;
-        top: 235px;
+        top: 135px;
+      }
+      
+      .footer {
+        border-radius: 45px 45px 0 0;
+        width: 100%;
+        height: 400px;
+        background-color: #7BD3FF;
+        margin-top: 40px;
       }
 
       nav {
         justify-content: left;
         font-family: "Figtree", sans-serif;
         font-weight: 300;
-        font-style: normal;
         list-style-type: none;
-        text-align: left;
-        margin: 120px;
+        margin: 50px 0 100px 80px;
       }
 
       a {
@@ -64,10 +95,15 @@
 
       h3 {
         font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1;
       }
 
       h4 {
         font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
       }
 
       p {
@@ -76,6 +112,11 @@
         font-size: 20px;
         font-weight: 300;
         font-style: normal;
+      }
+
+      img {
+        border-radius: 24px;
+        border: 1px solid #8C8C8C;
       }
     </style>
 
@@ -89,25 +130,67 @@
         <li><a href="/">about me</a></li>
       </ul>
     </nav>
-    <h2 class="uppertitle">hi, i'm</h2>
-    <h1 id="sitetitle">sydney bernal</h1>
+    <h2 class="upper-title">hi, i'm</h2>
+    <h1 id="site-title">sydney bernal</h1>
 
     <div class="container">
-    <div class="grid-item">
-      <img src="tofu.jpg" alt="Bowl of golden tofu with baby spinach, garnished with sesame seeds, garlic, chili flakes, and seasame oil." style="width:100%; height:100%;">
+      <!-- First widget: UI/UX -->
+      <div class="widget">
+        <div>
+          <img src="ties-topics.png" alt="Phone mockup with Instagram UI and new feature." style="width: 710px; height:auto;">
+        </div>
+        <div>
+          <h3>Instagram Ties &amp; Topics</h3>
+          <h4>Creating genuine connections within Instagram's Notes and DMs.</h4>
+          <div class="flexbox">
+            <div>designathon</div>
+            <div>logos</div>
+            <div>ui/ux</div>
+            <div>Figma</div>
+            <div>Illustrator</div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Second widget: Rebrand -->
+        <div class="widget">
+          <div>
+          <h3>Garnier: Rebranded</h3>
+          <h4>Redesigning a classic hair care brand to simplify and empower.</h4>
+          <div class="flexbox">
+            <div>marketing</div>
+            <div>logos</div>
+            <div>Express</div>
+            <div>Illustrator</div>
+            <div>Photoshop</div>
+          </div>
+          </div>
+        <div>
+          <img src="garnier-crop.png" alt="Clear shampoo bottle with green label surrounded by green apples on a warmly lit cloth background." style="width: 710px; height:auto;">
+        </div>
+      </div>
+      
+      <!-- Third widget: Graphic design -->
+      <div class="widget">
+        <div>
+          <img src="posters.png" alt="Two posters propped against a wall, the left with a black and purple star design and the right with a series of four posters in bright colours and typography." style="width: 710px; height:auto;">
+        </div>
+        <div>
+          <h3>Graphic Design</h3>
+          <h4>Icons and posters that share my journey as a designer.</h4>
+          <div class="flexbox">
+            <div>logos</div>
+            <div>branding</div>
+            <div>storytelling</div>
+            <div>Illustrator</div>
+            <div>Express</div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="grid-item">
-      <h3>Instagram Ties & Topics</h3>
-      <h4>Step 1</h4>
-      <p>Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.</p>
-
-      <h4>Step 1</h4>
-      <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
-
-      <h4>Tip</h4>
-      <p><em>Advance preparation:</em> This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
-    </div>
+    <div class="footer">
+      <h3>you made it!</h3>
+      <h4>thanks for stopping by.</h4>
     </div>
   </body>
 </html>
