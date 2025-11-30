@@ -67,13 +67,26 @@
         position: absolute;
         top: 135px;
       }
-      
+
       .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border-radius: 45px 45px 0 0;
         width: 100%;
         height: 400px;
         background-color: #7BD3FF;
         margin-top: 40px;
+      }
+
+      .footer div {
+        margin: 70px;
+      }
+      
+      .footer-middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
       }
 
       nav {
@@ -152,9 +165,9 @@
         </div>
       </div>
 
-        <!-- Second widget: Rebrand -->
-        <div class="widget">
-          <div>
+      <!-- Second widget: Rebrand -->
+      <div class="widget">
+        <div>
           <h3>Garnier: Rebranded</h3>
           <h4>Redesigning a classic hair care brand to simplify and empower.</h4>
           <div class="flexbox">
@@ -164,12 +177,12 @@
             <div>Illustrator</div>
             <div>Photoshop</div>
           </div>
-          </div>
+        </div>
         <div>
           <img src="garnier-crop.png" alt="Clear shampoo bottle with green label surrounded by green apples on a warmly lit cloth background." style="width: 710px; height:auto;">
         </div>
       </div>
-      
+
       <!-- Third widget: Graphic design -->
       <div class="widget">
         <div>
@@ -189,8 +202,21 @@
       </div>
     </div>
     <div class="footer">
-      <h3>you made it!</h3>
-      <h4>thanks for stopping by.</h4>
-    </div>
-  </body>
-</html>
+      <div>
+        <h3>you made it!</h3>
+        <h4>thanks for stopping by.</h4>
+      </div>
+      
+      <div class="footer-middle">
+        <h3>
+          *
+        </h3>
+      </div>
+
+      <div>
+        <h4>CONTACT ME</h4>
+        <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
+      </div> 
+    </div> 
+  </body> 
+</html> 
