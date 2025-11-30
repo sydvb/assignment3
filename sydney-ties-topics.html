@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <style>
+      .page-container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 120px;
+      }
+
       .container {
         max-width: 1440px;
         display: flex;
@@ -68,6 +74,27 @@
         top: 115px;
       }
 
+      .detail-container {
+        max-width: 1200px;
+        margin: 10px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 40px 40px 40px;
+        gap: 200px;
+        border-radius: 24px;
+        border: 1px solid #8C8C8C;
+      }
+
+      .detail-container div {
+        align-self: left;
+      }
+
+      .detail-container ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
       .footer {
         display: flex;
         justify-content: space-between;
@@ -79,10 +106,19 @@
         margin-top: 40px;
       }
 
+      .desc-container {
+        display: flex;
+        gap: 50px;
+      }
+      
+      .desc-container div {
+        flex: 1;
+      }
+
       .footer div {
         margin: 70px;
       }
-      
+
       .footer-middle {
         position: absolute;
         left: 50%;
@@ -101,7 +137,7 @@
         text-decoration: none;
       }
 
-      li {
+      nav li {
         display: inline-block;
         margin-right: 20px;
       }
@@ -119,23 +155,35 @@
         margin-bottom: 10px;
       }
 
+      h5 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #15A7F1;
+        margin: 0;
+        margin-top: 20px;
+      }
+
+      .detail-container h5 {
+        margin: 10px 0 10px 0;
+      }
+
       p {
         font-family: "Figtree", sans-serif;
         font-optical-sizing: auto;
         font-size: 20px;
         font-weight: 300;
         font-style: normal;
+        margin-top: 10px;
       }
 
       img {
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
-      
+
       #main-image {
-        margin: 60 120px 0 120px;
+        margin-top: 50px;
         border-radius: 24px;
-        border: 1px solid #8C8C8C;
       }
     </style>
 
@@ -150,58 +198,67 @@
       </ul>
     </nav>
     <h2 class="upper-title">instagram</h2>
-    <h1 id="site-title">ties & topics</h1>
+    <h1 id="site-title">ties &amp; topics</h1>
 
-    <div id="main-image">
-      <img src="ties-topics.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:100%">
-      
+    <div class="page-container">
+      <div id="main-image">
+        <img src="ties-topics.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:100%">
+      </div>
 
-      <!-- Second widget: Rebrand -->
-      <div class="widget">
+      <div class="detail-container">
         <div>
-          <h3>Garnier: Rebranded</h3>
-          <h4>Redesigning a classic hair care brand to simplify and empower.</h4>
-          <div class="flexbox">
-            <div>marketing</div>
-            <div>logos</div>
-            <div>Express</div>
-            <div>Illustrator</div>
-            <div>Photoshop</div>
-          </div>
+          <h5>MEMBERS</h5>
+          <ul>
+            <li>Charlene Lee</li>
+            <li>Vivian Zhao</li>
+          </ul>
         </div>
+
         <div>
-          <img src="garnier-crop.png" alt="Clear shampoo bottle with green label surrounded by green apples on a warmly lit cloth background." style="width: 710px; height:auto;">
+          <h5>TIMELINE</h5>
+          <ul>
+            <li>36-hour</li>
+            <li>designathon</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>TOOLS</h5>
+          <ul>
+            <li>Illustrator</li>
+            <li>Figma</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Third widget: Graphic design -->
-      <div class="widget">
-        <div>
-          <img src="posters.png" alt="Two posters propped against a wall, the left with a black and purple star design and the right with a series of four posters in bright colours and typography." style="width: 710px; height:auto;">
-        </div>
-        <div>
-          <h3>Graphic Design</h3>
-          <h4>Icons and posters that share my journey as a designer.</h4>
-          <div class="flexbox">
-            <div>logos</div>
-            <div>branding</div>
-            <div>storytelling</div>
-            <div>Illustrator</div>
-            <div>Express</div>
-          </div>
+      <h5>PROBLEM STATEMENT</h5>
+      <div class="desc-container">
+        <p>
+          How might we redesign our digital and social environments to help people build deeper, more meaningful connections despite the challenges of maintaining contact with old friends and creating ones?
+        </p>
+      </div>
+
+
+      <h5>OVERVIEW</h5>
+      <div class="desc-container">
+        <div> 
+        <p>We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats. Using Instagram's algorithm, Ties presents shared interests and experiences to users to create connections, while agentive AI finds keywords in chats to</p></div>
+      
+          <div><p> create topics that compiles relevant dates, plans, or pictures to be easily accessible. Users' plans will finally make it out of the group chat and encourage more in-person interactions. We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats.</p>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
     <div class="footer">
       <div>
         <h3>you made it!</h3>
         <h4>thanks for stopping by.</h4>
       </div>
-
       <div>
         <h4>CONTACT ME</h4>
         <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
-      </div> 
-    </div> 
-  </body> 
-</html> 
+      </div>
+    </div>
+  </body>
+</html>
