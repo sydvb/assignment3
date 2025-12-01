@@ -110,9 +110,26 @@
         display: flex;
         gap: 50px;
       }
-      
+
       .desc-container div {
         flex: 1;
+      }
+
+      .picture-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .picture-container div:first-child {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .picture-container div:last-child {
+        display: flex;
+        justify-content: flex-start;
       }
 
       .footer div {
@@ -180,6 +197,11 @@
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
+      
+      .picture-container img {
+        border-radius: 24px;
+        border: 1px solid #8C8C8C;
+      }
 
       #main-image {
         margin-top: 50px;
@@ -241,12 +263,19 @@
 
       <h5>OVERVIEW</h5>
       <div class="desc-container">
-        <div> 
-        <p>We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats. Using Instagram's algorithm, Ties presents shared interests and experiences to users to create connections, while agentive AI finds keywords in chats to</p></div>
-      
-          <div><p> create topics that compiles relevant dates, plans, or pictures to be easily accessible. Users' plans will finally make it out of the group chat and encourage more in-person interactions. We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats.</p>
+        <div>
+          <p>We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats. Using Instagram's algorithm, Ties presents shared interests and experiences to users to create connections, while agentive AI finds keywords in chats to</p>
+        </div>
+
+        <div>
+          <p> create topics that compiles relevant dates, plans, or pictures to be easily accessible. Users' plans will finally make it out of the group chat and encourage more in-person interactions. We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats.</p>
         </div>
       </div>
+    </div>
+
+    <div class="picture-container">
+      <div class="first-child"><img src="Persona.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
+      <div class="last-child"><img src="mockup-screen.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
     </div>
 
     <!-- footer -->
