@@ -23,18 +23,6 @@
         flex-direction: column;
       }
 
-      .widget {
-        display: flex;
-        max-width: 1200px;
-        padding: 50px 120px;
-        gap: 50px;
-        align-items: flex-start;
-      }
-
-      .widget div {
-        margin: 0;
-      }
-
       .flexbox {
         display: flex;
         align-items: center;
@@ -51,6 +39,27 @@
         margin: 15px 0;
       }
 
+      .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .upper-title {
+        font-size: 64px;
+        font-weight: 400;
+        margin: 0 120px;
+      }
+
+      .title-desc {
+        font-size: 22px;
+        font-weight: 300;
+        color: #7A7A7A;
+        text-align: right;
+        max-width: 600px;
+        margin: 0;
+      }
+
       #site-title {
         font-family: "Figtree", sans-serif;
         font-size: 96px;
@@ -58,6 +67,8 @@
         font-weight: 600;
         color: #1E1E1E;
         margin: 0px 120px 0px 120px;
+        position: absolute;
+        top: 170px;
       }
 
       body {
@@ -66,20 +77,12 @@
         margin: 0 auto;
       }
 
-      .upper-title {
-        font-size: 64px;
-        font-weight: 400;
-        margin: 0px 120px 0px 120px;
-        position: absolute;
-        top: 115px;
-      }
-
       .detail-container {
         max-width: 1200px;
         margin: 10px 0 10px 0;
         display: flex;
         flex-direction: row;
-        padding: 10px 40px 40px 40px;
+        padding: 10px 40px 25px 40px;
         gap: 200px;
         border-radius: 24px;
         border: 1px solid #8C8C8C;
@@ -100,10 +103,10 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 45px 45px 0 0;
-        width: 100%;
-        height: 400px;
+        max-width: 1440px;
         background-color: #7BD3FF;
         margin-top: 40px;
+        padding: 120px;
       }
 
       .desc-container {
@@ -132,14 +135,14 @@
         justify-content: flex-start;
       }
 
-      .footer div {
-        margin: 70px;
+      .picture-container div:nth-child(odd) {
+        display: flex;
+        justify-content: flex-end;
       }
 
-      .footer-middle {
-        position: absolute;
-        left: 50%;
-        top: 50%;
+      .picture-container div:nth-child(even) {
+        display: flex;
+        justify-content: flex-start;
       }
 
       nav {
@@ -147,11 +150,15 @@
         font-family: "Figtree", sans-serif;
         font-weight: 300;
         list-style-type: none;
-        margin: 50px 0 100px 80px;
+        margin: 50px 0 50px 85px;
       }
 
       a {
         text-decoration: none;
+      }
+
+      a:hover {
+        color: #15A7F1;
       }
 
       nav li {
@@ -162,14 +169,14 @@
       h3 {
         font-size: 60px;
         font-weight: 600;
-        margin-bottom: 10px;
+        margin: 10px;
         line-height: 1;
       }
 
       h4 {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 400;
-        margin-bottom: 10px;
+        margin-top: 10px;
       }
 
       h5 {
@@ -177,7 +184,6 @@
         font-weight: 400;
         color: #15A7F1;
         margin: 0;
-        margin-top: 20px;
       }
 
       .detail-container h5 {
@@ -188,24 +194,64 @@
         font-family: "Figtree", sans-serif;
         font-optical-sizing: auto;
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
-        margin-top: 10px;
+        padding: 0;
       }
 
-      img {
+      td {
+        padding: 0 20px;
+      }
+
+      #main-image {
+        margin-top: 110px;
+        max-width: 1200px;
         border-radius: 24px;
         border: 1px solid #8C8C8C;
+        overflow: hidden;
       }
-      
+
       .picture-container img {
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
 
-      #main-image {
-        margin-top: 50px;
+      .widget-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 110px;
+        gap: 10px;
+      }
+
+      .widget {
+        font-size: 32px;
         border-radius: 24px;
+        border: 1px solid #8C8C8C;
+        margin: 0;
+        padding: 25px 25px 10px 25px;
+      }
+
+      .widget h5 {
+        margin-bottom: 8px;
+      }
+
+      .widget h4 {
+        margin-bottom: 6px;
+        margin-top: 0;
+      }
+
+      .widget p {
+        margin-top: 0;
+      }
+
+      .widget img {
+        border-radius: 24px;
+        border: 1px solid #8C8C8C;
+        margin: 6px 0 15px 0;
+      }
+      
+      .comp {
+        color: #15A7F1;
       }
     </style>
 
@@ -215,68 +261,77 @@
       <ul>
         <li><a href="/">ui/ux</a></li>
         <li><a href="/">rebrand</a></li>
-        <li><a href="/">graphic design</a></li>
         <li><a href="/">about me</a></li>
       </ul>
     </nav>
-    <h2 class="upper-title">instagram</h2>
-    <h1 id="site-title">ties &amp; topics</h1>
+    <div class="title-container">
+      <h2 class="upper-title">all about</h2>
+      <div>
+        <img src="logos.png" alt="Clear shampoo bottle with green apples surrounding it on a warmly lit cloth background." style="width:70%">
+      </div>
+    </div>
+
+    <h1 id="site-title">me</h1>
 
     <div class="page-container">
-      <div id="main-image">
-        <img src="ties-topics.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:100%">
-      </div>
-
-      <div class="detail-container">
-        <div>
-          <h5>MEMBERS</h5>
-          <ul>
-            <li>Charlene Lee</li>
-            <li>Vivian Zhao</li>
-          </ul>
+      <div class="widget-container">
+        <div class="widget">
+          <h5>WHERE</h5>
+          <h4>Global Business and Digital Arts</h4>
+          <p>@University of Waterloo</p>
         </div>
 
-        <div>
-          <h5>TIMELINE</h5>
-          <ul>
-            <li>36-hour</li>
-            <li>designathon</li>
-          </ul>
+        <div class="widget">
+          <h5>BIO</h5>
+          <p>Always trying to go to design events to meet like-minded people and continue to expand my design skills! Otherwise, you can find me getting a sweet treat after class :)</p>
         </div>
 
-        <div>
-          <h5>TOOLS</h5>
-          <ul>
-            <li>Illustrator</li>
-            <li>Figma</li>
-          </ul>
-        </div>
-      </div>
-
-      <h5>PROBLEM STATEMENT</h5>
-      <div class="desc-container">
-        <p>
-          How might we redesign our digital and social environments to help people build deeper, more meaningful connections despite the challenges of maintaining contact with old friends and creating ones?
-        </p>
-      </div>
-
-
-      <h5>OVERVIEW</h5>
-      <div class="desc-container">
-        <div>
-          <p>We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats. Using Instagram's algorithm, Ties presents shared interests and experiences to users to create connections, while agentive AI finds keywords in chats to</p>
+        <div class="widget">
+          <h5>@MOSAIC INNOVATION CHALLENGE</h5>
+          <img src="mosaic.jpeg" alt="Clear shampoo bottle with green apples surrounding it on a warmly lit cloth background." style="width:100%">
         </div>
 
-        <div>
-          <p> create topics that compiles relevant dates, plans, or pictures to be easily accessible. Users' plans will finally make it out of the group chat and encourage more in-person interactions. We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats.</p>
+        <div class="widget">
+          <h5>COMPETITIONS</h5>
+          <table>
+            <tr>
+              <td><em>NOV. 2024</em></td>
+              <td>uXperience Design Jam</td>
+              <td><div class="comp">-</div></td>
+            </tr>
+            <tr>
+              <td><em>JAN. 2025</em></td>
+              <td>uXperience Design Jam</td>
+              <td><div class="comp">-</div></td>
+            </tr>
+            <tr>
+              <td><em>MAR. 2025</em></td>
+              <td>Product Design Sprint</td>
+              <td><div class="comp">3rd Place</div></td>
+            </tr>
+            <tr>
+              <td><em>MAR. 2025</em></td>
+              <td>Mosaic Innovation Challenge</td>
+              <td><div class="comp">-</div></td>
+            </tr>
+            <tr>
+              <td><em>OCT. 2025</em></td>
+              <td>NASA Space Apps</td>
+              <td><div class="comp">Global Nominees</div></td>
+            </tr>
+            <tr>
+              <td><em>NOV. 2025</em></td>
+              <td>UW Blueprint Designathon</td>
+              <td><div class="comp">3rd Place</div></td>
+            </tr>
+          </table>
+          
+          <h5>FUN FACT</h5>
         </div>
+
       </div>
     </div>
 
-    <div class="picture-container">
-      <div class="first-child"><img src="Persona.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
-      <div class="last-child"><img src="mockup-screen.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
-    </div>
 
     <!-- footer -->
     <div class="footer">
@@ -287,6 +342,7 @@
       <div>
         <h4>CONTACT ME</h4>
         <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
+        <p>@SydneyBernal</p>
       </div>
     </div>
   </body>
