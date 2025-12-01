@@ -51,27 +51,6 @@
         margin: 15px 0;
       }
 
-      .title-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-      }
-
-      .upper-title {
-        font-size: 64px;
-        font-weight: 400;
-        margin: 0 120px;
-      }
-
-      .title-desc {
-        font-size: 22px;
-        font-weight: 300;
-        color: #7A7A7A;
-        text-align: right;
-        max-width: 500px;
-        margin: 0 120px 0 0;
-      }
-
       #site-title {
         font-family: "Figtree", sans-serif;
         font-size: 96px;
@@ -79,8 +58,6 @@
         font-weight: 600;
         color: #1E1E1E;
         margin: 0px 120px 0px 120px;
-        position: absolute;
-        top: 170px;
       }
 
       body {
@@ -89,12 +66,20 @@
         margin: 0 auto;
       }
 
+      .upper-title {
+        font-size: 64px;
+        font-weight: 400;
+        margin: 0px 120px 0px 120px;
+        position: absolute;
+        top: 115px;
+      }
+
       .detail-container {
         max-width: 1200px;
         margin: 10px 0 10px 0;
         display: flex;
         flex-direction: row;
-        padding: 10px 40px 25px 40px;
+        padding: 10px 40px 40px 40px;
         gap: 200px;
         border-radius: 24px;
         border: 1px solid #8C8C8C;
@@ -115,10 +100,10 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 45px 45px 0 0;
-        max-width: 1440px;
+        width: 100%;
+        height: 400px;
         background-color: #7BD3FF;
         margin-top: 40px;
-        padding: 120px;
       }
 
       .desc-container {
@@ -147,14 +132,14 @@
         justify-content: flex-start;
       }
 
-      .picture-container div:nth-child(odd) {
-        display: flex;
-        justify-content: flex-end;
+      .footer div {
+        margin: 70px;
       }
 
-      .picture-container div:nth-child(even) {
-        display: flex;
-        justify-content: flex-start;
+      .footer-middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
       }
 
       nav {
@@ -162,15 +147,11 @@
         font-family: "Figtree", sans-serif;
         font-weight: 300;
         list-style-type: none;
-        margin: 50px 0 50px 85px;
+        margin: 50px 0 100px 80px;
       }
 
       a {
         text-decoration: none;
-      }
-
-      a:hover {
-        color: #15A7F1;
       }
 
       nav li {
@@ -216,15 +197,14 @@
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
-
+      
       .picture-container img {
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
 
       #main-image {
-        margin-top: 110px;
-        max-width: 1200px;
+        margin-top: 50px;
         border-radius: 24px;
       }
     </style>
@@ -239,31 +219,28 @@
         <li><a href="/">about me</a></li>
       </ul>
     </nav>
-    <div class="title-container">
-      <h2 class="upper-title">rebrand</h2>
-      <div class="title-desc">Reimagining a classic hair care brand to simplify and empower.
-      </div>
-    </div>
-
-    <h1 id="site-title">garnier</h1>
+    <h2 class="upper-title">instagram</h2>
+    <h1 id="site-title">ties &amp; topics</h1>
 
     <div class="page-container">
       <div id="main-image">
-        <img src="garnier-crop.png" alt="Clear shampoo bottle with green apples surrounding it on a warmly lit cloth background." style="width:100%">
+        <img src="ties-topics.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:100%">
       </div>
 
       <div class="detail-container">
         <div>
           <h5>MEMBERS</h5>
           <ul>
-            <li>Individual</li>
+            <li>Charlene Lee</li>
+            <li>Vivian Zhao</li>
           </ul>
         </div>
 
         <div>
           <h5>TIMELINE</h5>
           <ul>
-            <li>5 weeks</li>
+            <li>36-hour</li>
+            <li>designathon</li>
           </ul>
         </div>
 
@@ -271,36 +248,34 @@
           <h5>TOOLS</h5>
           <ul>
             <li>Illustrator</li>
-            <li>Photoshop</li>
-            <li>Adobe Firefly</li>
+            <li>Figma</li>
           </ul>
         </div>
       </div>
 
       <h5>PROBLEM STATEMENT</h5>
       <div class="desc-container">
-        <p>How might we reimagine Garnier as a brand that connects with consumers and aligns with modern design?</p>
+        <p>
+          How might we redesign our digital and social environments to help people build deeper, more meaningful connections despite the challenges of maintaining contact with old friends and creating ones?
+        </p>
       </div>
+
 
       <h5>OVERVIEW</h5>
       <div class="desc-container">
         <div>
-          <p>Ingrained with an ecologically-conscious mindset, Garnier markets itself to be associated with clean, green beauty. The bottle is uninspired and inaccessible, and design-wise, traps the product's fruit or plant source in a pill shape, making the brand feel constricted. Their green-tinted shampoo bottles, they appear dark on the shelves and are lost in comparison to their opaque-bottled conditioner counterparts.Additionally, their acidic-green colour contradicts the gentle and clean narrative they have moved forwards with in more recent product releases. </p>
+          <p>We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats. Using Instagram's algorithm, Ties presents shared interests and experiences to users to create connections, while agentive AI finds keywords in chats to</p>
         </div>
 
         <div>
-          <p>Metallic text accompanies a large image of the product's highlighted ingredient inside a pill shape that reoccurs throughout Fructis' product line. Its initial impression does not convey Garnier's nourishing and revitalizing qualities, nor its natural roots. While Garnier has reached beyond shampoo and conditioner, its visual identity is torn between nostalgic legacy branding and an evolving, modern narrative.</p>
+          <p> create topics that compiles relevant dates, plans, or pictures to be easily accessible. Users' plans will finally make it out of the group chat and encourage more in-person interactions. We reimagined Instagram's direct messaging space with Ties &amp; Topics, two new features that revamp Instagram Notes and organizes users' chats.</p>
         </div>
       </div>
     </div>
 
     <div class="picture-container">
-      <div class="first-child"><img src="garnier-front.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
-      <div class="nth-child"><img src="garnier-back.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
-      <div class="nth-child"><img src="garnier-rationale.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
-      <div class="nth-child"><img src="garnier-logos.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
-      <div class="nth-child"><img src="garnier-g.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
-      <div class="last-child"><img src="garnier-sketches.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
+      <div class="first-child"><img src="Persona.png" alt="Persona in an Instagram style profile page, of a busy CS student who wants to make more friends." style="width:70%"></div>
+      <div class="last-child"><img src="mockup-screen.png" alt="Mockup of two phones on Instagram, introducing new Ties and Topics feature." style="width:70%"></div>
     </div>
 
     <!-- footer -->
@@ -312,7 +287,6 @@
       <div>
         <h4>CONTACT ME</h4>
         <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
-        <p>@SydneyBernal</p>
       </div>
     </div>
   </body>
