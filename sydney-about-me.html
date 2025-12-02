@@ -48,7 +48,7 @@
       .upper-title {
         font-size: 64px;
         font-weight: 400;
-        margin: 0 120px;
+        margin: 30px 0 0 120px;
       }
 
       .title-desc {
@@ -68,7 +68,24 @@
         color: #1E1E1E;
         margin: 0px 120px 0px 120px;
         position: absolute;
-        top: 170px;
+        top: 150px;
+      }
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-content: baseline;
+        margin: 30px 120px 0 85px;
+      }
+      
+      #monogram {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      
+      #monogram:hover {
+        font-style: italic;
+        color: #15A7F1;
       }
 
       body {
@@ -150,7 +167,7 @@
         font-family: "Figtree", sans-serif;
         font-weight: 300;
         list-style-type: none;
-        margin: 50px 0 50px 85px;
+        margin: 0;
       }
 
       a {
@@ -218,7 +235,7 @@
 
       .widget-container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         margin-top: 110px;
         gap: 10px;
       }
@@ -257,6 +274,7 @@
 
   </head>
   <body>
+    <div class="nav-container">
     <nav>
       <ul>
         <li><a href="/">ui/ux</a></li>
@@ -264,6 +282,9 @@
         <li><a href="/">about me</a></li>
       </ul>
     </nav>
+      
+      <div id="monogram">sb*</div>
+      </div>
     <div class="title-container">
       <h2 class="upper-title">all about</h2>
       <div>
@@ -325,9 +346,7 @@
               <td><div class="comp">3rd Place</div></td>
             </tr>
           </table>
-          
-          <h5>FUN FACT</h5>
-        </div>
+
 
       </div>
     </div>
