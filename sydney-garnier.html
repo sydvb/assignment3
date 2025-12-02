@@ -17,38 +17,16 @@
         padding: 0 120px;
       }
 
-      .container {
-        max-width: 1440px;
+      .nav-container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-content: baseline;
+        margin: 30px 120px 0 85px;
       }
 
-      .widget {
-        display: flex;
-        max-width: 1200px;
-        padding: 50px 120px;
-        gap: 50px;
-        align-items: flex-start;
-      }
-
-      .widget div {
-        margin: 0;
-      }
-
-      .flexbox {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .flexbox div {
-        background-color: #9EE1FF;
-        border-radius: 64px;
-        font-size: 14px;
-        font-weight: 400;
-        display: inline-block;
-        padding: 7px 12px 10px 12px;
-        margin: 15px 0;
+      #monogram {
+        font-size: 40px;
+        font-weight: 600;
       }
 
       .title-container {
@@ -80,7 +58,7 @@
         color: #1E1E1E;
         margin: 0px 120px 0px 120px;
         position: absolute;
-        top: 170px;
+        top: 130px;
       }
 
       body {
@@ -115,10 +93,19 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 45px 45px 0 0;
-        max-width: 1440px;
         background-color: #7BD3FF;
-        margin-top: 40px;
-        padding: 120px;
+        margin-top: 70px;
+        padding: 40px 120px;
+      }
+
+      .footer p {
+        margin: 0;
+        padding: 4px;
+      }
+
+      .footer h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
       }
 
       .desc-container {
@@ -162,14 +149,24 @@
         font-family: "Figtree", sans-serif;
         font-weight: 300;
         list-style-type: none;
-        margin: 50px 0 50px 85px;
+        margin: 0;
       }
 
       a {
         text-decoration: none;
+        color: black;
+      }
+
+      a:visited {
+        color: black;
       }
 
       a:hover {
+        color: #15A7F1;
+        font-style: italic;
+      }
+
+      a:active {
         color: #15A7F1;
       }
 
@@ -223,7 +220,7 @@
       }
 
       #main-image {
-        margin-top: 110px;
+        margin-top: 130px;
         max-width: 1200px;
         border-radius: 24px;
       }
@@ -231,14 +228,17 @@
 
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">ui/ux</a></li>
-        <li><a href="/">rebrand</a></li>
-        <li><a href="/">graphic design</a></li>
-        <li><a href="/">about me</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="/">ui/ux</a></li>
+          <li><a href="/">rebrand</a></li>
+          <li><a href="/">about me</a></li>
+        </ul>
+      </nav>
+      <div id="monogram"><a href="index.html">sb*</a></div>
+    </div>
+
     <div class="title-container">
       <h2 class="upper-title">rebrand</h2>
       <div class="title-desc">Reimagining a classic hair care brand to simplify and empower.
@@ -307,11 +307,11 @@
     <div class="footer">
       <div>
         <h3>you made it!</h3>
-        <h4>thanks for stopping by.</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thanks for stopping by.</h4>
       </div>
       <div>
         <h4>CONTACT ME</h4>
-        <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
+        <p><a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a></p>
         <p>@SydneyBernal</p>
       </div>
     </div>

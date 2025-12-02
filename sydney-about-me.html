@@ -17,28 +17,6 @@
         padding: 0 120px;
       }
 
-      .container {
-        max-width: 1440px;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .flexbox {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .flexbox div {
-        background-color: #9EE1FF;
-        border-radius: 64px;
-        font-size: 14px;
-        font-weight: 400;
-        display: inline-block;
-        padding: 7px 12px 10px 12px;
-        margin: 15px 0;
-      }
-
       .title-container {
         display: flex;
         justify-content: space-between;
@@ -70,49 +48,12 @@
         position: absolute;
         top: 150px;
       }
-      
+
       .nav-container {
         display: flex;
         justify-content: space-between;
         align-content: baseline;
         margin: 30px 120px 0 85px;
-      }
-      
-      #monogram {
-        font-size: 40px;
-        font-weight: 600;
-      }
-      
-      #monogram:hover {
-        font-style: italic;
-        color: #15A7F1;
-      }
-
-      body {
-        font-family: "Figtree", sans-serif;
-        max-width: 1440px;
-        margin: 0 auto;
-      }
-
-      .detail-container {
-        max-width: 1200px;
-        margin: 10px 0 10px 0;
-        display: flex;
-        flex-direction: row;
-        padding: 10px 40px 25px 40px;
-        gap: 200px;
-        border-radius: 24px;
-        border: 1px solid #8C8C8C;
-      }
-
-      .detail-container div {
-        align-self: left;
-      }
-
-      .detail-container ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
       }
 
       .footer {
@@ -120,46 +61,24 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 45px 45px 0 0;
-        max-width: 1440px;
         background-color: #7BD3FF;
         margin-top: 40px;
         padding: 120px;
       }
-
-      .desc-container {
-        display: flex;
-        gap: 50px;
+      
+      .footer p {
+        margin: 0;
+        padding: 4px;
       }
-
-      .desc-container div {
-        flex: 1;
+      
+      .footer h4 {
+        margin-bottom: 5px;
       }
-
-      .picture-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 30px;
-        margin-top: 30px;
-      }
-
-      .picture-container div:first-child {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .picture-container div:last-child {
-        display: flex;
-        justify-content: flex-start;
-      }
-
-      .picture-container div:nth-child(odd) {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .picture-container div:nth-child(even) {
-        display: flex;
-        justify-content: flex-start;
+      
+      body {
+        font-family: "Figtree", sans-serif;
+        max-width: 1440px;
+        margin: 0 auto;
       }
 
       nav {
@@ -172,10 +91,25 @@
 
       a {
         text-decoration: none;
+        color: black;
+      }
+      
+      a:visited {
+        color: black;
       }
 
       a:hover {
         color: #15A7F1;
+        font-style: italic;
+      }
+
+      a:active {
+        color: #15A7F1;
+      }
+
+      #monogram {
+        font-size: 40px;
+        font-weight: 600;
       }
 
       nav li {
@@ -203,40 +137,41 @@
         margin: 0;
       }
 
-      .detail-container h5 {
-        margin: 10px 0 10px 0;
-      }
-
       p {
         font-family: "Figtree", sans-serif;
         font-optical-sizing: auto;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         font-style: normal;
         padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      
+      table {
+        font-size: 18px;
       }
 
       td {
-        padding: 0 20px;
+        padding: 0 5px;
       }
 
-      #main-image {
-        margin-top: 110px;
-        max-width: 1200px;
-        border-radius: 24px;
-        border: 1px solid #8C8C8C;
+      .me {
+        margin-left: 275px;
         overflow: hidden;
       }
-
-      .picture-container img {
-        border-radius: 24px;
+      
+      .me img {
+        max-width: 60px;
+        max-height: 60px;
+        border-radius: 12px;
         border: 1px solid #8C8C8C;
       }
 
       .widget-container {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-top: 110px;
+        margin-top: 50px;
         gap: 10px;
       }
 
@@ -253,7 +188,7 @@
       }
 
       .widget h4 {
-        margin-bottom: 6px;
+        margin-bottom: 4px;
         margin-top: 0;
       }
 
@@ -266,7 +201,7 @@
         border: 1px solid #8C8C8C;
         margin: 6px 0 15px 0;
       }
-      
+
       .comp {
         color: #15A7F1;
       }
@@ -275,16 +210,16 @@
   </head>
   <body>
     <div class="nav-container">
-    <nav>
-      <ul>
-        <li><a href="/">ui/ux</a></li>
-        <li><a href="/">rebrand</a></li>
-        <li><a href="/">about me</a></li>
-      </ul>
-    </nav>
-      
-      <div id="monogram">sb*</div>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="/">ui/ux</a></li>
+          <li><a href="/">rebrand</a></li>
+          <li><a href="/">about me</a></li>
+        </ul>
+      </nav>
+
+      <div id="monogram"><a href="index.html">sb*</a></div>
+    </div>
     <div class="title-container">
       <h2 class="upper-title">all about</h2>
       <div>
@@ -293,6 +228,7 @@
     </div>
 
     <h1 id="site-title">me</h1>
+    <div class="me"><img src="me.jpeg" alt="Clear shampoo bottle with green apples surrounding it on a warmly lit cloth background." style="width:10%"></div>
 
     <div class="page-container">
       <div class="widget-container">
@@ -318,51 +254,66 @@
             <tr>
               <td><em>NOV. 2024</em></td>
               <td>uXperience Design Jam</td>
-              <td><div class="comp">-</div></td>
+              <td>
+                <div class="comp">-</div>
+              </td>
             </tr>
             <tr>
               <td><em>JAN. 2025</em></td>
               <td>uXperience Design Jam</td>
-              <td><div class="comp">-</div></td>
+              <td>
+                <div class="comp">-</div>
+              </td>
             </tr>
             <tr>
               <td><em>MAR. 2025</em></td>
               <td>Product Design Sprint</td>
-              <td><div class="comp">3rd Place</div></td>
+              <td>
+                <div class="comp">3rd Place</div>
+              </td>
             </tr>
             <tr>
               <td><em>MAR. 2025</em></td>
               <td>Mosaic Innovation Challenge</td>
-              <td><div class="comp">-</div></td>
+              <td>
+                <div class="comp">-</div>
+              </td>
             </tr>
             <tr>
               <td><em>OCT. 2025</em></td>
               <td>NASA Space Apps</td>
-              <td><div class="comp">Global Nominees</div></td>
+              <td>
+                <div class="comp">Global Nominees</div>
+              </td>
             </tr>
             <tr>
               <td><em>NOV. 2025</em></td>
               <td>UW Blueprint Designathon</td>
-              <td><div class="comp">3rd Place</div></td>
+              <td>
+                <div class="comp">3rd Place</div>
+              </td>
             </tr>
           </table>
-
+          <h5><br>FUN FACT</h5>
+          <p>I have a background in traditional art! It’s what brought me to design in high school, and eventually led me to UI/UX in GBDA.</p>
+        </div>
+              
+      </div>
+      
 
       </div>
-    </div>
 
+      <!-- footer -->
+      <div class="footer">
+        <div>
+          <h3>you made it!</h3>
+          <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thanks for stopping by.</h4>
+        </div>
+        <div>
+          <h4>CONTACT ME</h4>
+          <p><a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a></p>
+          <p>@SydneyBernal</p>
+        </div>
 
-    <!-- footer -->
-    <div class="footer">
-      <div>
-        <h3>you made it!</h3>
-        <h4>thanks for stopping by.</h4>
-      </div>
-      <div>
-        <h4>CONTACT ME</h4>
-        <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
-        <p>@SydneyBernal</p>
-      </div>
-    </div>
   </body>
 </html>

@@ -17,38 +17,38 @@
         padding: 0 120px;
       }
 
-      .container {
-        max-width: 1440px;
+      .nav-container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-content: baseline;
+        margin: 30px 120px 0 85px;
       }
 
-      .widget {
+      #monogram {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .title-container {
         display: flex;
-        max-width: 1200px;
-        padding: 50px 120px;
-        gap: 50px;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: baseline;
       }
 
-      .widget div {
-        margin: 0;
-      }
-
-      .flexbox {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .flexbox div {
-        background-color: #9EE1FF;
-        border-radius: 64px;
-        font-size: 14px;
+      .upper-title {
+        font-size: 64px;
         font-weight: 400;
-        display: inline-block;
-        padding: 7px 12px 10px 12px;
-        margin: 15px 0;
+        margin: 30px 0 0 120px;
+      }
+
+      .title-desc {
+        font-size: 22px;
+        font-weight: 300;
+        color: #7A7A7A;
+        text-align: right;
+        max-width: 600px;
+        margin: 0;
+        margin-right: 120px;
       }
 
       #site-title {
@@ -58,20 +58,19 @@
         font-weight: 600;
         color: #1E1E1E;
         margin: 0px 120px 0px 120px;
+        position: absolute;
+        top: 170px;
+      }
+
+      #main-image {
+        margin-top: 140px;
+        border-radius: 24px;
       }
 
       body {
         font-family: "Figtree", sans-serif;
         max-width: 1440px;
         margin: 0 auto;
-      }
-
-      .upper-title {
-        font-size: 64px;
-        font-weight: 400;
-        margin: 0px 120px 0px 120px;
-        position: absolute;
-        top: 115px;
       }
 
       .detail-container {
@@ -100,10 +99,20 @@
         justify-content: space-between;
         align-items: center;
         border-radius: 45px 45px 0 0;
-        width: 100%;
-        height: 400px;
         background-color: #7BD3FF;
         margin-top: 40px;
+        padding: 40px 120px;
+      }
+
+      .footer p {
+        margin: 0;
+        padding: 4px;
+      }
+
+      .footer h4 {
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 5px;
       }
 
       .desc-container {
@@ -132,26 +141,30 @@
         justify-content: flex-start;
       }
 
-      .footer div {
-        margin: 70px;
-      }
-
-      .footer-middle {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-      }
-
       nav {
         justify-content: left;
         font-family: "Figtree", sans-serif;
         font-weight: 300;
         list-style-type: none;
-        margin: 50px 0 100px 80px;
+        margin: 0;
       }
 
       a {
         text-decoration: none;
+        color: black;
+      }
+
+      a:visited {
+        color: black;
+      }
+
+      a:hover {
+        color: #15A7F1;
+        font-style: italic;
+      }
+
+      a:active {
+        color: #15A7F1;
       }
 
       nav li {
@@ -197,29 +210,31 @@
         border-radius: 24px;
         border: 1px solid #8C8C8C;
       }
-      
+
       .picture-container img {
         border-radius: 24px;
         border: 1px solid #8C8C8C;
-      }
-
-      #main-image {
-        margin-top: 50px;
-        border-radius: 24px;
       }
     </style>
 
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">ui/ux</a></li>
-        <li><a href="/">rebrand</a></li>
-        <li><a href="/">graphic design</a></li>
-        <li><a href="/">about me</a></li>
-      </ul>
-    </nav>
-    <h2 class="upper-title">instagram</h2>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="sydney-ties-topics.html">ui/ux</a></li>
+          <li><a href="sydney-garnier.html">rebrand</a></li>
+          <li><a href="sydney-about-me.html">about me</a></li>
+        </ul>
+      </nav>
+      <div id="monogram"><a href="index.html">sb*</a></div>
+    </div>
+    <div class="title-container">
+
+      <h2 class="upper-title">instagram</h2>
+      <div class="title-desc">Reimagining a classic hair care brand to simplify and empower.
+      </div>
+    </div>
     <h1 id="site-title">ties &amp; topics</h1>
 
     <div class="page-container">
@@ -282,11 +297,12 @@
     <div class="footer">
       <div>
         <h3>you made it!</h3>
-        <h4>thanks for stopping by.</h4>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thanks for stopping by.</h4>
       </div>
       <div>
         <h4>CONTACT ME</h4>
-        <a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a>
+        <p><a href="mailto:sbernal@uwaterloo.ca">sbernal@uwaterloo.ca</a></p>
+        <p>@SydneyBernal</p>
       </div>
     </div>
   </body>
